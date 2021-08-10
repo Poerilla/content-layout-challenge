@@ -1,0 +1,116 @@
+@import "./variables.scss";
+
+@media (max-width: 360px) {
+  .content-element-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .content-element-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-element {
+    display: flex;
+  }
+  .content-element__author {
+    border-bottom-left-radius: $border_radii;
+    border-top-left-radius: $border_radii;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    white-space: nowrap;
+  }
+
+  .content-element__content {
+    border: 2px $background_content_color solid;
+    border-top-right-radius: $border_radii;
+    border-bottom-right-radius: $border_radii;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    text-align: justify;
+    text-align-last: left;
+    padding-left: 10px;
+    padding: 5px;
+  }
+
+  .content-element__content-img {
+    max-width: 100% !important;
+    padding: 10px;
+    border-radius: $border_radii;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .content-element-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content-element {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .content-element-list {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .content-element-list {
+    display: flex;
+    max-width: 992px;
+  }
+}
+@media (min-width: 992px) {
+  .content-element-list {
+    display: flex;
+    max-width: 1200px;
+  }
+}
+
+.mt-3 .mb-5 {
+  justify-content: center;
+}
+.content-element-list {
+  justify-content: space-between;
+}
+.content-element {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.content-element__author {
+  background-color: $background_content_color;
+  border-top-left-radius: $border_radii;
+  border-top-right-radius: $border_radii;
+  padding: 25px;
+}
+.content-element__author-img {
+  justify-content: center;
+  width: 100px;
+  padding: 10px;
+  border-radius: $border_radii;
+}
+
+.content-element__content-img {
+  justify-content: center;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: $border_radii;
+}
+
+.content-element__content-copy {
+  padding-bottom: 18px;
+}
+
+.content-element__content {
+  border: 2px $background_content_color solid;
+  border-bottom-left-radius: $border_radii;
+  border-bottom-right-radius: $border_radii;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+}
